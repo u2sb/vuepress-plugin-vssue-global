@@ -3,7 +3,7 @@ const { resolve } = require("path");
 module.exports = ({
   platform = "github",
   container = "main",
-  title = "「Comment」<%- frontmatter.title %>",
+  title = "[Comment]<%- frontmatter.title %>",
   ...options
 }) => {
   const platformAPI = {
