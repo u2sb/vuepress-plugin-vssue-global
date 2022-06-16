@@ -11,8 +11,6 @@ import ejs from "ejs";
 import "./styles/index.styl";
 
 export default {
-  name: "VssueDemo",
-
   components: {
     VssueComponent: VssueComponent,
   },

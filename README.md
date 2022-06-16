@@ -1,7 +1,7 @@
 ## 安装
 
 ```
-yarn add @u2sb/vuepress-plugin-vssue
+yarn add vuepress-plugin-vssue-global
 ```
 
 ## 使用方法
@@ -12,7 +12,7 @@ yarn add @u2sb/vuepress-plugin-vssue
 module.exports = {
   plugins: [
     [
-      "@u2sb/vuepress-plugin-vssue",
+      "vuepress-plugin-vssue-global",
       {
         platform: "github",
         title: "「Comment」<%- frontmatter.title %>",

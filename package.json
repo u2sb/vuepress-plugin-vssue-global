@@ -1,11 +1,11 @@
 {
-  "name": "@u2sb/vuepress-plugin-vssue",
+  "name": "vuepress-plugin-vssue-global",
   "version": "0.0.1",
   "description": "A comments player plugin for vuepress",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/u2sb/vuepress-plugin-vssue.git"
+    "url": "git+https://github.com/u2sb/vuepress-plugin-vssue-global.git"
   },
   "keywords": [
     "Vuepress",
@@ -16,9 +16,9 @@
   "author": "MonoLogueChi",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/u2sb/vuepress-plugin-vssue/issues"
+    "url": "https://github.com/u2sb/vuepress-plugin-vssue-global/issues"
   },
-  "homepage": "https://github.com/u2sb/vuepress-plugin-vssue",
+  "homepage": "https://github.com/u2sb/vuepress-plugin-vssue-global",
   "dependencies": {
     "@vssue/api-bitbucket-v2": "^1.4.7",
     "@vssue/api-gitea-v1": "^1.4.7",

@@ -33,8 +33,6 @@ module.exports = ({
   }
 
   return {
-    name: "vssue",
-
     enhanceAppFiles: resolve(__dirname, "enhanceApp.js"),
     globalUIComponents: ["Vssue"],
 
