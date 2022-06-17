@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-vssue-global",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A comments player plugin for vuepress",
   "main": "src/index.js",
   "repository": {

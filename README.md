@@ -8,7 +8,10 @@ yarn add vuepress-plugin-vssue-global
 
 ## 配置
 
-配置与 [@vssue/vuepress-plugin-vssue](https://vssue.js.org/zh/guide/vuepress.html) 基本一致，多增加一项 title 配置，支持 ejs 模板。
+配置完全继承 [@vssue/vuepress-plugin-vssue](https://vssue.js.org/zh/guide/vuepress.html)，增加配置项如下：
+
+- title: vssue title，支持 ejs 模板
+- needComments: 默认是否需要评论区，当配置为 false 时，需文章 frontmatter 添加`comments: true`才会开启评论区。
 
 ```js
 module.exports = {
@@ -18,6 +21,7 @@ module.exports = {
       {
         platform: "github",
         title: "[Comment]<%- frontmatter.title %>",
+        needComments: true,
         // 其他的 Vssue 配置
         clientId: "",
         clientSecret: "",

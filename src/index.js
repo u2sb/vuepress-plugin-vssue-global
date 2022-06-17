@@ -3,6 +3,7 @@ const { resolve } = require("path");
 module.exports = ({
   platform = "github",
   container = "main",
+  needComments = true,
   title = "[Comment]<%- frontmatter.title %>",
   ...options
 }) => {
@@ -37,8 +38,9 @@ module.exports = ({
     globalUIComponents: ["Vssue"],
 
     define: {
-      CONTAINER: container,
-      TITLE: title,
+      VSSUE_NEEDCOMMENTS:needComments,
+      VSSUE_CONTAINER: container,
+      VSSUE_TITLE: title,
       VSSUE_OPTIONS: options,
     },
 

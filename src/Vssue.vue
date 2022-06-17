@@ -39,13 +39,15 @@ export default {
   },
   methods: {
     initialize() {
-      this.isLoad = false;
       this.$el.remove();
+      this.isLoad = false;
       setTimeout(() => {
         if (this.needComment(this.$frontmatter)) {
-          const container = document.querySelector(CONTAINER);
+          const container = document.querySelector(VSSUE_CONTAINER);
           container.appendChild(this.$el);
-          this.title = ejs.render(TITLE, { frontmatter: this.$frontmatter });
+          this.title = ejs.render(VSSUE_TITLE, {
+            frontmatter: this.$frontmatter,
+          });
           this.options = {
             api: VssueAPI,
             ...VSSUE_OPTIONS,
@@ -56,7 +58,12 @@ export default {
     },
 
     needComment(frontmatter) {
-      return frontmatter.comment !== false && frontmatter.comments !== false;
+      let nc = VSSUE_NEEDCOMMENTS;
+      if (nc) {
+        return frontmatter.comment !== false && frontmatter.comments !== false;
+      } else {
+        return frontmatter.comment === true || frontmatter.comments === true;
+      }
     },
   },
 };
