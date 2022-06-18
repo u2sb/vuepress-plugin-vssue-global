@@ -1,4 +1,9 @@
-> 仅适配 vuepress 1.x
+> 当前版本仅适配 vuepress 1.x
+
+## 演示
+
+- [U2SB](https://github.com/u2sb/www.u2sb.com)
+- [xxwhite](https://github.com/MonoLogueChi/blog.xxwhite.com)
 
 ## 安装
 
