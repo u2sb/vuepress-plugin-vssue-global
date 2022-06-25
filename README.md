@@ -2,8 +2,8 @@
 
 ## 演示
 
-- [U2SB](https://github.com/u2sb/www.u2sb.com)
-- [xxwhite](https://github.com/MonoLogueChi/blog.xxwhite.com)
+- [U2SB](https://www.u2sb.com)
+- [xxwhite](https://blog.xxwhite.com)
 
 ## 安装
 
@@ -53,3 +53,10 @@ comments: false
 ```yml
 comments: true
 ```
+
+## 感谢
+
+本插件开发参考了其他同类插件，在此表示感谢
+
+- [@vssue/vuepress-plugin-vssue](https://vssue.js.org/zh/guide/vuepress.html)
+- [vuepress-plugin-comment](https://github.com/dongyuanxin/vuepress-plugin-comment)
